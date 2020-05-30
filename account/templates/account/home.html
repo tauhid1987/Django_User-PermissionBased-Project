@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+<h1 class="display-4">An web application for handling a pizza restaurant’s online orders</h1>
+<p class="lead">Users will be able to browse the restaurant’s menu, add items to their cart, and submit their orders. Meanwhile, the restaurant owners will be able to add and update menu items, and view orders that have been placed.</p>
+</div>
+<hr>
+<div class="container">
+  <div class="d-flex flex-column">
+    <h3>Registers Users:</h3>
+      {% for account in accounts %}
+          <p>{{account}}</p>
+      {% endfor %}
+  </div>
+</div>
+{% endblock content %}
